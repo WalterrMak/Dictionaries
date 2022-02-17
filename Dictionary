@@ -1,0 +1,10 @@
+Write a dictionary under the name of my_first_dictionary. The system will check if it is a dictionary.
+
+
+
+
+
+Solution::
+
+my_first_dictionary = {}
+print(type(my_first_dictionary))
