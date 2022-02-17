@@ -1,0 +1,20 @@
+Convert the given two lists into a dictionary as shown as in the result.
+
+
+
+abbreviation = ['AI', 'EENGR', 'CS'] 
+
+values = ['Artificial Intelligence','Electrical Engineer','Computer Science']
+
+print the dictionary
+
+
+
+Solution ::
+
+abbreviation = ['AI', 'EENGR', 'CS'] 
+
+values = ['Artificial Intelligence','Electrical Engineer','Computer Science']
+
+dictionary = dict(zip(abbreviation, values))
+print(dictionary)
