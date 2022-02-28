@@ -1,0 +1,9 @@
+Add the following  key/value pair into the given dictionary as shown as in the result.
+
+
+Solution::
+
+my_dict = { "a": 1,"b": 2, "c": 3,"d":4}
+
+my_dict["e"]= 5
+print(my_dict)
