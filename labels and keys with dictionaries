@@ -1,0 +1,20 @@
+There is dictionaries, that contain labels as keys, and value is a tuple of pictures
+define a function called: pics_from_tuples that takes in dictionary, and returns dictionary where keys are pictures and
+values are labels of pictures
+example:
+
+dictionary to function:
+{'0': ('001.jpg', '004.jpg', '005.jpg'), '1': ('002.jpg', '006.jpg'), '2': ('003.jpg',)}
+
+return of func:
+{'001.jpg': '0', '004.jpg': '0', '005.jpg': '0', '002.jpg': '1', '006.jpg': '1', '003.jpg': '2'}
+
+
+Solutions:
+
+def pics_from_tuples(dict_in):
+    dict_to_return = {}
+    for label in dict_in:
+        for picture in dict_in[label]:
+            dict_to_return[picture] = label
+    return dict_to_return
