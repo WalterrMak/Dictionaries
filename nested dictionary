@@ -1,0 +1,17 @@
+Define a function called multi_baser that takes in tuple of base 10 ints.
+and returns nested dictionary where numbers in tuple are dictionaries with different bases as keys.
+Example
+tuple: (1,10,20)
+funtion returns: {1: {'base10': 1, 'base2': '0b1', 'base16': '0x1'}, 10: {'base10': 10, 'base2': '0b1010', 'base16': '0xa'}, 20: {'base10': 20, 'base2': '0b10100', 'base16': '0x14'}}
+
+
+
+Solution:
+
+def multi_baser(tuple_of_ints):
+    dictionary_to_return = {}
+    for i in tuple_of_ints:
+        dictionary_to_return[i] = {"base10":i,
+                                   "base2":bin(i),
+                                   "base16":hex(i)}
+    return dictionary_to_return
