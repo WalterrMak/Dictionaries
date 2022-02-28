@@ -1,0 +1,34 @@
+There is dictionaries, that contain picture name as key, and value is the label data from that picture
+define a function called pics_to_tuples that takes in dictionary, and returns dictionary where keys are labels and
+values are tuples of picture names, that contained that label
+
+
+
+Solutions:
+
+def pics_to_tuples(dict_in):
+    # normally I would go for sets and .values(), but we didn't learn those so..
+    # this will be bit ugly, but uses only things you know how to use
+    # first we check how many labels
+    labels = []
+    for key in dict_in:
+        #print(k)
+        #print(dict_in[key])
+        if dict_in[key] in labels:
+            continue
+        else:
+            labels.append(dict_in[key])
+    #Then we make new dictionaries based on labels
+    dict_to_return = {}
+    for label in labels:
+        dict_to_return[label] = []
+    #test where label is same, and append picture to that list
+    for key_in in dict_in:
+        for key_re in dict_to_return:
+            if dict_in[key_in] == key_re:
+                dict_to_return[key_re].append(key_in)
+    #finally make all the list to tuples
+    for key in dict_to_return:
+        dict_to_return[key] = tuple(dict_to_return[key])
+
+    return dict_to_return
