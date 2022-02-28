@@ -1,0 +1,9 @@
+define a function called: dic_nester that takes in 3 dictionaries, and returns
+new nested dictionary where copy of the incoming dictionaries are values and keys are 1,2,3
+
+
+Solution:
+
+def dic_nester(first_dic, second_dic, third_dic):
+    dic_to_return = {1:first_dic, 2:second_dic, 3:third_dic}
+    return dic_to_return
