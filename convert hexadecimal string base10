@@ -1,0 +1,18 @@
+Make a function called hexer, that takes in hexadecimal number as string
+and tries to convert it to the base 10 number,
+and return answer.
+
+make sure that your function can hadle the situation where string is not valid.
+If non valid string is passed to function, print "not a valid hexadecimal" and return 0
+
+
+
+Solution:
+
+def hexer(hex_num):
+    try:
+        ten_base_num = int(hex_num, 16)
+        return ten_base_num
+    except ValueError:
+        print("not a valid hexadecimal")
+        return 0
