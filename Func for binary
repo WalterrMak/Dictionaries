@@ -1,0 +1,10 @@
+Make a function called: ten_baser that takes in number in binary forms,
+like: "0b0001110101" , "100110" , "101" or "0b0101"
+and makes it as base10 number and returns it
+
+
+Solution:
+
+def ten_baser(bin_number):
+    base10 = int(bin_number, 2)
+    return base10
