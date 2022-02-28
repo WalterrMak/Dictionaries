@@ -1,0 +1,9 @@
+There is variable: base2  that contains number in binary form
+
+modify that variable using python in way, that number in base10 and save it to variable: base10
+
+
+
+Solution:
+
+base10 = int(base2, 2)
